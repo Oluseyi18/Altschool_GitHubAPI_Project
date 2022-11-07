@@ -14,7 +14,7 @@ const Repository = () => {
   );
   const [currentRepository, setcurrentRepository] = useState(1);
 
-  const indexOfLastPage = ReposPerPage * currentRepository; // 10
+  const indexOfLastPage = ReposPerPage * currentRepository; // 5
   const indexOfFirstPage = indexOfLastPage - ReposPerPage; // 0
   const ModifiedReposCount = repository.slice(
     indexOfFirstPage,
@@ -42,12 +42,12 @@ const Repository = () => {
             <p>My Repositories</p>
           </div>
           <div className="repo-container-content">
-            {ModifiedReposCount.map((repo, index) => {
+            {ModifiedReposCount.map((repo) => {
               return (
                 <div className="repos-contents" key={repo.id}>
                   <a href={repo.url}>
                     <p>
-                      {index}. {repo.name}
+                      {repo.name}
                     </p>
                   </a>
                 </div>

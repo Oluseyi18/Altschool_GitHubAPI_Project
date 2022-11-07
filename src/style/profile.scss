@@ -30,6 +30,7 @@
   row-gap: 20px;
   column-gap: 20px;
   padding: 1em 0;
+  color: white;
 
   .box {
     width: 100%;
@@ -91,10 +92,10 @@
 .home-profile-card {
   width: 100%;
   height: auto !important;
-  background-color: #ffffff;
+  background-image: linear-gradient(to bottom, rgb(27 138 126) 52%, rgb(21 84 120 / 40%));
   border-radius: 4px;
   padding: 1em;
-  color: #333;
+  color: rgb(211, 207, 207);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   font-size: 13px;
@@ -143,7 +144,7 @@
       border-radius: 4px;
       box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
       text-align: start !important;
-      color: #333 !important;
+      color: rgb(211, 207, 207) !important;
       cursor: pointer;
       transition: all 0.2s ease-in;
       font-weight: 400 !important;

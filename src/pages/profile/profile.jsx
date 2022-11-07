@@ -67,7 +67,7 @@ const Profile = () => {
                   <div className="slot-card">
                     <h4>
                       <BsTwitter />{" "}
-                      <a href="https://twitter.com/jeremytechie">
+                      <a href="https://twitter.com/seyeezi18">
                         {data.twitter_username}
                       </a>
                     </h4>
@@ -75,7 +75,7 @@ const Profile = () => {
                   <div className="slot-card">
                     <h4>
                       <BsFillCloudFog2Fill />{" "}
-                      <a href="https://pro-blyncnov.vercel.app">{data.blog}</a>
+                      <a href="https://oluseyi18.github.io/Eezi-Codez/">{data.blog}</a>
                     </h4>
                   </div>
                 </div>
