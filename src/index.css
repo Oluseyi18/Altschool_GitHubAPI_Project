@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -17,4 +17,36 @@ body {
 
 a {
   color: inherit;
+}
+h1.fourOfour{
+  font-size: 3.5em;
+  color: rgb(27 138 126);
+  line-height: 1.1;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+button.fourest{
+  margin: 1.5rem;
+   color: #fff !important;
+    background-color: rgb(27 138 126);
+    padding: 12px 24px !important;
+    font-size: 16px !important;
+    -webkit-user-select: none;
+    user-select: none;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border: 2px solid rgb(27 138 126);
+    border-radius: 8px;
+}
+.profile-back-button{
+  color: rgb(27 138 126);
 }

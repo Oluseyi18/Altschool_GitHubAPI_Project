@@ -2,7 +2,11 @@ import React, { useState, useEffect } from "react";
 // import { Link } from "react-router-dom";
 import axios from "axios";
 
+import { Link } from "react-router-dom";
+
 import Pagination from "../../utils/Pagination";
+
+import { IoIosArrowRoundBack } from "react-icons/io";
 
 import LoadingImage from "../../assets/loading.gif";
 
@@ -38,6 +42,13 @@ const Repository = () => {
     <>
       {repository?.length !== 0 ? (
         <div className="repo-container">
+          <div className="profile-back-button">
+              <Link to={-1}>
+                <IoIosArrowRoundBack
+                  style={{ fontSize: "30px", fontWeight: "bolder" }}
+                />
+              </Link>
+            </div>
           <div className="repo-container-tag">
             <p>My Repositories</p>
           </div>
@@ -45,7 +56,7 @@ const Repository = () => {
             {ModifiedReposCount.map((repo) => {
               return (
                 <div className="repos-contents" key={repo.id}>
-                  <a href={repo.url}>
+                  <a href={repo.svn_url}>
                     <p>
                       {repo.name}
                     </p>

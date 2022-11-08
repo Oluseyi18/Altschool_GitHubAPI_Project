@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 import LoadingImage from "../../assets/loading.gif";
+import { IoIosArrowRoundBack } from "react-icons/io";
 
 import {
   BsFillCalendar3RangeFill,
@@ -41,6 +42,13 @@ const Profile = () => {
           </div>
           <br />
           {/* profile Infomattion  */}
+          <div className="profile-back-button">
+              <Link to={-1}>
+                <IoIosArrowRoundBack
+                  style={{ fontSize: "30px", fontWeight: "bolder" }}
+                />
+              </Link>
+            </div>
           <div className="profile-container">
             <p>My Profile</p>
           </div>
